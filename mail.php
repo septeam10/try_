@@ -10,8 +10,7 @@ $time= $_POST['time'];
 $to = "team10sep@gmail.com";
 $subject = "Mail From website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Date =" . $date, "\r\n Deparment =" . $selectDepartment, "\r\n Doctor =" . $selectDoctor;
-$headers = "From: noreply@medinova.com" . "\r\n" .
-"CC: somebodyelse@example.com";
+$headers = "From: noreply@medinova.com" . "\r\n" ;
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
